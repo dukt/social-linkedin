@@ -1,23 +1,35 @@
 <?php
-namespace Craft;
-
 /**
  * @link      https://dukt.net/craft/linkedin/
  * @copyright Copyright (c) 2015, Dukt
  * @license   https://dukt.net/craft/linkedin/docs/license
  */
 
-require_once(CRAFT_PLUGINS_PATH.'linkedin/socialgateways/Linkedin.php');
+namespace Craft;
 
 class LinkedinPlugin extends BasePlugin
 {
     /**
+     * Get OAuth Providers
+     */
+    public function getOauthProviders()
+    {
+        require_once(CRAFT_PLUGINS_PATH.'linkedin/providers/oauth/Linkedin.php');
+
+        return [
+            'Dukt\OAuth\Providers\Linkedin'
+        ];
+    }
+
+    /**
      * Get Social Gateways
      */
-    public function getSocialGateways()
+    public function getSocialLoginProviders()
     {
+        require_once(CRAFT_PLUGINS_PATH.'linkedin/providers/social/Linkedin.php');
+
         return [
-            'Dukt\Linkedin\Social\Gateway\Linkedin'
+            'Dukt\Social\LoginProviders\Linkedin',
         ];
     }
 

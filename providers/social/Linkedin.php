@@ -1,17 +1,16 @@
 <?php
-namespace Dukt\Linkedin\Social\Gateway;
-
 /**
  * @link      https://dukt.net/craft/linkedin/
  * @copyright Copyright (c) 2015, Dukt
  * @license   https://dukt.net/craft/linkedin/docs/license
  */
 
+namespace Dukt\Social\LoginProviders;
+
 use Craft\UrlHelper;
-use Dukt\Social\Gateway\BaseGateway;
 use Guzzle\Http\Client;
 
-class Linkedin extends BaseGateway
+class Linkedin extends BaseProvider
 {
     // Public Methods
     // =========================================================================
@@ -22,14 +21,6 @@ class Linkedin extends BaseGateway
 	public function getName()
     {
         return "LinkedIn";
-    }
-
-	/**
-	 * Get Icon URL
-	 */
-    public function getIconUrl()
-    {
-        return UrlHelper::getResourceUrl('linkedin/svg/linkedin.svg');
     }
 
     /**
