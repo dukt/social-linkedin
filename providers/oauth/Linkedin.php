@@ -1,8 +1,8 @@
 <?php
 /**
- * @link      https://dukt.net/craft/github/
+ * @link      https://dukt.net/craft/linkedin/
  * @copyright Copyright (c) 2016, Dukt
- * @license   https://dukt.net/craft/github/docs/license
+ * @license   https://dukt.net/craft/linkedin/docs/license
  */
 
 namespace Dukt\OAuth\Providers;
@@ -56,9 +56,9 @@ class Linkedin extends BaseProvider
     }
 
     /**
-     * Create Github Provider
+     * Create Linkedin Provider
      *
-     * @return Github
+     * @return Linkedin
      */
     public function createProvider()
     {
