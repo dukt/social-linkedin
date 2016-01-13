@@ -1,7 +1,7 @@
 <?php
 /**
  * @link      https://dukt.net/craft/linkedin/
- * @copyright Copyright (c) 2015, Dukt
+ * @copyright Copyright (c) 2016, Dukt
  * @license   https://dukt.net/craft/linkedin/docs/license
  */
 
