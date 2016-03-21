@@ -14,6 +14,7 @@ class LinkedinPlugin extends BasePlugin
      */
     public function getOauthProviders()
     {
+        require_once(CRAFT_PLUGINS_PATH.'oauth/providers/BaseProvider.php');
         require_once(CRAFT_PLUGINS_PATH.'linkedin/providers/oauth/Linkedin.php');
 
         return [
@@ -26,6 +27,7 @@ class LinkedinPlugin extends BasePlugin
      */
     public function getSocialLoginProviders()
     {
+        require_once(CRAFT_PLUGINS_PATH.'social/providers/login/BaseProvider.php');
         require_once(CRAFT_PLUGINS_PATH.'linkedin/providers/social/Linkedin.php');
 
         return [
