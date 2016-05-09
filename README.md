@@ -7,7 +7,7 @@ Craft OAuth provider and Craft Social Login provider for LinkedIn
 ## Requirements
 
 - [Craft CMS 2.5+](https://craftcms.com/)
-- [Craft OAuth 1.0+](https://dukt.net/craft/oauth)
+- [Craft OAuth 2.0+](https://dukt.net/craft/oauth)
 
 ## Installation
 
