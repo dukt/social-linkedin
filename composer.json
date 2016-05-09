@@ -1,0 +1,5 @@
+{
+  "require": {
+    "league/oauth2-linkedin": "0.4.0@dev"
+  }
+}
