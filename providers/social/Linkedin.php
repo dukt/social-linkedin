@@ -7,8 +7,8 @@
 
 namespace Dukt\Social\LoginProviders;
 
-use Craft\UrlHelper;
 use Guzzle\Http\Client;
+use Craft\Oauth_TokenModel;
 
 class Linkedin extends BaseProvider
 {
@@ -23,6 +23,11 @@ class Linkedin extends BaseProvider
         return "LinkedIn";
     }
 
+	public function getOauthProviderHandle()
+	{
+		return 'linkedin';
+	}
+
     /**
      * Get Scopes
      */
@@ -36,7 +41,7 @@ class Linkedin extends BaseProvider
     /**
      * Get Profile
      */
-    public function getProfile()
+	public function getProfile(Oauth_TokenModel $token)
     {
         $fields = [
             'id', 'email-address', 'first-name', 'last-name', 'headline', 'location', 'industry', 'picture-url', 'public-profile-url',
@@ -44,7 +49,7 @@ class Linkedin extends BaseProvider
 
         $fields = implode(',', $fields);
 
-        $response = $this->api('get', 'people/~:(' . $fields . ')');
+        $response = $this->api($token, 'get', 'people/~:(' . $fields . ')');
 
         return [
             'id' => $response['id'],
@@ -58,13 +63,10 @@ class Linkedin extends BaseProvider
         ];
     }
 
-    private function api($method = 'get', $uri, $params = ['format'=>'json'], $headers = null, $postFields = null)
+    private function api(Oauth_TokenModel $token, $method = 'get', $uri, $params = ['format'=>'json'], $headers = null, $postFields = null)
     {
         // client
         $client = new Client('https://api.linkedin.com/v1/');
-
-        //token
-        $token = $this->token;
 
         // params
         $headers['Authorization'] = 'Bearer '.$token->accessToken;
