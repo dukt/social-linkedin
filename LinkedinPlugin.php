@@ -41,7 +41,7 @@ class LinkedinPlugin extends BasePlugin
     /**
      * Get Name
      */
-    function getName()
+    public function getName()
     {
         return Craft::t('LinkedIn');
     }
@@ -49,7 +49,7 @@ class LinkedinPlugin extends BasePlugin
     /**
      * Get Version
      */
-    function getVersion()
+    public function getVersion()
     {
         return '1.0.1';
     }
@@ -57,7 +57,7 @@ class LinkedinPlugin extends BasePlugin
     /**
      * Get Developer
      */
-    function getDeveloper()
+    public function getDeveloper()
     {
         return 'Dukt';
     }
@@ -65,7 +65,7 @@ class LinkedinPlugin extends BasePlugin
     /**
      * Get Developer URL
      */
-    function getDeveloperUrl()
+    public function getDeveloperUrl()
     {
         return 'https://dukt.net/';
     }
