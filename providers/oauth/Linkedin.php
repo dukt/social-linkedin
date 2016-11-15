@@ -68,6 +68,6 @@ class Linkedin extends BaseProvider
             'redirectUri' => $this->getRedirectUri(),
         ];
 
-        return new \League\OAuth2\Client\Provider\Linkedin($config);
+        return new \League\OAuth2\Client\Provider\LinkedIn($config);
     }
 }
