@@ -1,16 +1,46 @@
 {
-  "name": "dukt/craft-linkedin",
-  "description": "LinkedIn plugin for Craft CMS",
+  "name": "dukt/social-linkedin",
+  "description": "LinkedIn integration for Social",
+  "version": "3.0.0",
+  "type": "craft-plugin",
+  "keywords": [
+    "linkedin",
+    "social",
+    "craftcms"
+  ],
+  "license": "MIT",
   "authors": [
     {
-      "name": "Benjamin David",
-      "email": "ben@dukt.net"
+      "name": "Dukt",
+      "homepage": "https://dukt.net/"
     }
   ],
-  "type": "craft-plugin",
-
+  "support": {
+    "email": "support@dukt.net",
+    "issues": "https://github.com/dukt/social-linkedin/issues?state=open",
+    "source": "https://github.com/dukt/social-linkedin",
+    "docs": "https://github.com/dukt/social-linkedin",
+    "rss": "https://github.com/dukt/social-linkedin/commits/master.atom"
+  },
   "require": {
-    "composer/installers": "~1.0",
-    "league/oauth2-linkedin": "0.4.0@dev"
+    "dukt/social": "^2.0",
+    "league/oauth2-linkedin": "2.1.0@dev"
+  },
+  "autoload": {
+    "psr-4": {
+      "dukt\\social\\linkedin\\": "src/"
+    }
+  },
+  "repositories": [
+    {
+      "type": "composer",
+      "url": "https://asset-packagist.org"
+    }
+  ],
+  "extra": {
+    "name": "LinkedIn",
+    "handle": "social-linkedin",
+    "changelogUrl": "https://raw.githubusercontent.com/dukt/social-linkedin/master/CHANGELOG.md",
+    "downloadUrl": "https://github.com/dukt/social-linkedin/archive/master.zip"
   }
 }
