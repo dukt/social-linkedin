@@ -2,7 +2,7 @@
 namespace dukt\social\linkedin;
 
 /**
- * Plugin represents the Linkedin integration plugin.
+ * Plugin represents the LinkedIn integration plugin.
  *
  * @author    Dukt <support@dukt.net>
  * @since     1.0
@@ -10,7 +10,9 @@ namespace dukt\social\linkedin;
 class Plugin extends \craft\base\Plugin
 {
     /**
-     * Get Social Gateways
+     * Returns Social login provider class names.
+     *
+     * @return array
      */
     public function getSocialLoginProviders()
     {
