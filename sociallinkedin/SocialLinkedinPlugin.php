@@ -57,4 +57,12 @@ class SocialLinkedinPlugin extends BasePlugin
     {
         return 'https://dukt.net/';
     }
+
+    /**
+     * Get release feed URL
+     */
+    public function getReleaseFeedUrl()
+    {
+        return 'https://raw.githubusercontent.com/dukt/social-linkedin/v2/releases.json';
+    }
 }
