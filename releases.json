@@ -1,0 +1,24 @@
+[
+  {
+    "version": "2.1.0",
+    "downloadUrl": "https://github.com/dukt/social-linkedin/archive/2.1.0.zip",
+    "date": "2017-09-29T11:00:00-02:00",
+    "notes": [
+      "[Added] Renamed plugin to `Social LinkedIn`",
+      "[Added] Added `getReleaseFeedUrl()` method to `SocialLinkedinPlugin`",
+      "[Added] Added releases.json",
+      "[Improved] Removed LinkedIn OAuth provider, now provided by default in OAuth 2.1+",
+    ]
+  },
+  {
+    "version": "2.0.0",
+    "downloadUrl": "https://github.com/dukt/social-linkedin/archive/2.0.0.zip",
+    "date": "2016-06-03T11:00:00-02:00",
+    "notes": [
+      "[Added] Compatibility with OAuth 2.0+",
+      "[Added] Added league/oauth2-linkedin 0.4.0 dependency",
+      "[Added] Plugin as a composer package",
+      "[Improved] Autoload dependencies on plugin init",
+    ]
+  }
+]
