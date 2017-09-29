@@ -1,19 +1,25 @@
-# Craft LinkedIn
+# Social LinkedIn for Craft CMS
 
-Craft OAuth provider and Craft Social Login provider for LinkedIn
+[LinkedIn](https://www.linkedin.com/) integration for [Social](https://github.com/dukt/social).
 
 -------------------------------------------
 
 ## Requirements
 
-- PHP 5.5+
-- [Craft CMS 2.5+](https://craftcms.com/)
-- [Craft OAuth 2.0+](https://dukt.net/craft/oauth)
+- [Craft 2.5+](http://craftcms.com/)
+- [OAuth 2.1+](https://github.com/dukt/oauth)
+- [Social 1.2+](https://github.com/dukt/social)
 
 ## Installation
 
-1. Download the latest release of the plugin
-2. Drop the `linkedin` plugin folder to `craft/plugins`
-3. LinkedIn should appear in OAuth settings under `CP > Settings > Plugins > OAuth > Providers`
+1. Download and unzip the latest release of the plugin.
+2. Move the `sociallinkedin` plugin folder to `craft/plugins`.
+3. Go to CP → Settings → Plugins, and install the Social LinkedIn plugin.
+3. Social LinkedIn should appear in OAuth settings under CP → Settings → Social → Providers.
 
-[Dukt.net](https://dukt.net/) © 2016 - All rights reserved
+## Updating from 1.x or 2.0 to 2.1+
+
+The plugin has been renamed from `LinkedIn` to `Social LinkedIn`, so you will need to:
+
+1. First, uninstall the `LinkedIn` plugin.
+2. Then install the `Social LinkedIn` plugin.
