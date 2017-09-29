@@ -15,18 +15,6 @@ class LinkedinPlugin extends BasePlugin
 	}
 
     /**
-     * Get OAuth Providers
-     */
-    public function getOauthProviders()
-    {
-        require_once(CRAFT_PLUGINS_PATH.'linkedin/providers/oauth/Linkedin.php');
-
-        return [
-            'Dukt\OAuth\Providers\Linkedin'
-        ];
-    }
-
-    /**
      * Get Social Gateways
      */
     public function getSocialLoginProviders()
