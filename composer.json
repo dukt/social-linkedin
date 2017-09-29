@@ -1,11 +1,15 @@
 {
-  "name": "dukt/craft-linkedin",
-  "description": "LinkedIn plugin for Craft CMS",
+  "name": "dukt/social-linkedin",
+  "description": "LinkedIn integration for Social",
   "type": "craft-plugin",
+  "license": "MIT",
   "authors": [
     {
-      "name": "Benjamin David",
-      "email": "ben@dukt.net"
+      "name": "Dukt",
+      "homepage": "https://dukt.net/"
     }
-  ]
+  ],
+  "config": {
+    "vendor-dir": "sociallinkedin/vendor"
+  }
 }
