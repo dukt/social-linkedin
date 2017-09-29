@@ -7,7 +7,7 @@
 
 namespace Craft;
 
-class LinkedinPlugin extends BasePlugin
+class SocialLinkedinPlugin extends BasePlugin
 {
 	public function init()
 	{
@@ -19,7 +19,7 @@ class LinkedinPlugin extends BasePlugin
      */
     public function getSocialLoginProviders()
     {
-        require_once(CRAFT_PLUGINS_PATH.'linkedin/providers/social/Linkedin.php');
+        require_once(CRAFT_PLUGINS_PATH.'sociallinkedin/providers/social/Linkedin.php');
 
         return [
             'Dukt\Social\LoginProviders\Linkedin',
@@ -31,7 +31,7 @@ class LinkedinPlugin extends BasePlugin
      */
     public function getName()
     {
-        return Craft::t('LinkedIn');
+        return Craft::t('Social LinkedIn');
     }
 
     /**
