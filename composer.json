@@ -20,7 +20,7 @@
     "issues": "https://github.com/dukt/social-linkedin/issues?state=open",
     "source": "https://github.com/dukt/social-linkedin",
     "docs": "https://github.com/dukt/social-linkedin",
-    "rss": "https://github.com/dukt/social-linkedin/commits/master.atom"
+    "rss": "https://github.com/dukt/social-linkedin/commits/v3.atom"
   },
   "require": {
     "dukt/social": "^2.0.0-beta.2",
@@ -40,7 +40,7 @@
   "extra": {
     "name": "LinkedIn",
     "handle": "social-linkedin",
-    "changelogUrl": "https://raw.githubusercontent.com/dukt/social-linkedin/master/CHANGELOG.md",
-    "downloadUrl": "https://github.com/dukt/social-linkedin/archive/master.zip"
+    "changelogUrl": "https://raw.githubusercontent.com/dukt/social-linkedin/v3/CHANGELOG.md",
+    "downloadUrl": "https://github.com/dukt/social-linkedin/archive/v3.zip"
   }
 }
