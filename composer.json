@@ -23,6 +23,7 @@
     "rss": "https://github.com/dukt/social-linkedin/commits/v3.atom"
   },
   "require": {
+    "craftcms/cms": "^3.0.0-RC1", 
     "dukt/social": "^2.0.0-beta.2",
     "league/oauth2-linkedin": "2.1.0@dev"
   },
