@@ -38,7 +38,7 @@
     }
   ],
   "extra": {
-    "name": "LinkedIn",
+    "name": "Social LinkedIn",
     "handle": "social-linkedin",
     "changelogUrl": "https://raw.githubusercontent.com/dukt/social-linkedin/v3/CHANGELOG.md",
     "downloadUrl": "https://github.com/dukt/social-linkedin/archive/v3.zip"

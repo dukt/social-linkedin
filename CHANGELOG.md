@@ -1,6 +1,9 @@
 Changelog
 =========
 
+## 3.0.1 - Unreleased
+- Fixed plugin name
+
 ## 3.0.0 - 2017-10-01
 
 ### Added
