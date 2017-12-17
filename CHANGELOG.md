@@ -1,9 +1,10 @@
 Changelog
 =========
 
-## 3.0.1 - Unreleased
+## 3.0.1 - 2017-12-17
 
-### Improved
+### Changed
+- Updated to require craftcms/cms `^3.0.0-RC1`.
 - Updated plugin icon.
 
 ### Fixed
