@@ -1,7 +1,7 @@
 {
   "name": "dukt/social-linkedin",
   "description": "LinkedIn integration for Social",
-  "version": "3.0.1",
+  "version": "3.0.2",
   "type": "craft-plugin",
   "keywords": [
     "linkedin",
@@ -24,7 +24,7 @@
   },
   "require": {
     "craftcms/cms": "^3.0.0-RC1", 
-    "dukt/social": "^2.0.0-beta.2",
+    "dukt/social": "^2.0.0-beta.8",
     "league/oauth2-linkedin": "2.1.0@dev"
   },
   "autoload": {

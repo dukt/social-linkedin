@@ -1,6 +1,11 @@
 Changelog
 =========
 
+## 3.0.2 - 2018-05-18
+
+### Changed
+- Typed `dukt\social\github\loginproviders\Github::getName()`’s return to string.
+
 ## 3.0.1 - 2017-12-17
 
 ### Changed

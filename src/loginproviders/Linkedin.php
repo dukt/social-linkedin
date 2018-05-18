@@ -20,7 +20,7 @@ class Linkedin extends LoginProvider
     /**
      * @inheritdoc
      */
-	public function getName()
+	public function getName(): string
     {
         return "LinkedIn";
     }
