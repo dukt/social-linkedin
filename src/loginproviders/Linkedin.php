@@ -85,6 +85,19 @@ class Linkedin extends LoginProvider
         return new \League\OAuth2\Client\Provider\LinkedIn($config);
     }
 
+    /**
+     * @inheritdoc
+     */
+    public function getDefaultUserFieldMapping(): array
+    {
+        return [
+            'id' => '{{ profile.getId() }}',
+            'email' => '{{ profile.getEmail() }}',
+            'username' => '{{ profile.getEmail() }}',
+            'photo' => '{{ profile.getImageUrl() }}',
+        ];
+    }
+
     // Protected Methods
     // =========================================================================
 
