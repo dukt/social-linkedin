@@ -53,26 +53,6 @@ class Linkedin extends LoginProvider
     }
 
     /**
-     * @inheritdoc
-     */
-	public function getProfile(Token $token)
-    {
-        $remoteProfile = $this->getRemoteProfile($token);
-
-        return [
-            'id' => $remoteProfile['id'],
-            'email' => $remoteProfile['emailAddress'],
-            'username' => $remoteProfile['emailAddress'],
-            'photo' => $remoteProfile['pictureUrl'],
-            'firstName' => $remoteProfile['firstName'],
-            'lastName' => $remoteProfile['lastName'],
-            'profileUrl' => $remoteProfile['pictureUrl'],
-            'location' => $remoteProfile['location']['name'],
-        ];
-
-    }
-
-    /**
      * Returns the login provider’s OAuth provider.
      *
      * @return \League\OAuth2\Client\Provider\LinkedIn
