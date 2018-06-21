@@ -13,6 +13,7 @@ Changelog
 - Removed `dukt\social\linkedin\loginproviders\Linkedin::getRemoteProfile()`.
 - Removed `dukt\social\linkedin\loginproviders\Linkedin::getClient()`.
 - Updated `dukt\social\linkedin\loginproviders\Linkedin::getOauthProvider()` to take into account the new OAuth provider config introduced in Social 2.0.0-beta.10.
+- Updated `dukt/social` composer dependency to `^2.0.0-beta.10`.
 
 ## 3.0.2 - 2018-05-18
 
