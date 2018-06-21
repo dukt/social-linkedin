@@ -1,4 +1,5 @@
 <?php
+
 namespace dukt\social\linkedin\loginproviders;
 
 use Craft;
@@ -18,7 +19,7 @@ class Linkedin extends LoginProvider
     /**
      * @inheritdoc
      */
-	public function getName(): string
+    public function getName(): string
     {
         return "LinkedIn";
     }
