@@ -3,8 +3,6 @@ namespace dukt\social\linkedin\loginproviders;
 
 use Craft;
 use dukt\social\base\LoginProvider;
-use GuzzleHttp\Client;
-use dukt\social\models\Token;
 
 /**
  * Linkedin represents the Linkedin gateway
