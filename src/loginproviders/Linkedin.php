@@ -62,7 +62,7 @@ class Linkedin extends LoginProvider
     {
         $config = $this->getOauthProviderConfig();
 
-        return new \League\OAuth2\Client\Provider\LinkedIn($config);
+        return new \League\OAuth2\Client\Provider\LinkedIn($config['options']);
     }
 
     /**
