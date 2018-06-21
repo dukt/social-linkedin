@@ -21,7 +21,7 @@ class Linkedin extends LoginProvider
      */
     public function getName(): string
     {
-        return "LinkedIn";
+        return 'LinkedIn';
     }
 
     /**
