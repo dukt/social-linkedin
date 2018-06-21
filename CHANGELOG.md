@@ -11,6 +11,7 @@ Changelog
 - Renamed `dukt\social\linkedin\loginproviders\Linkedin::getDefaultScope()` to `dukt\social\linkedin\loginproviders\Linkedin::getDefaultOauthScope()`.
 - Removed `dukt\social\linkedin\loginproviders\Linkedin::getProfile()`.
 - Removed `dukt\social\linkedin\loginproviders\Linkedin::getRemoteProfile()`.
+- Removed `dukt\social\linkedin\loginproviders\Linkedin::getClient()`.
 
 ## 3.0.2 - 2018-05-18
 

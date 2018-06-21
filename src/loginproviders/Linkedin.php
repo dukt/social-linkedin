@@ -77,32 +77,6 @@ class Linkedin extends LoginProvider
             'photo' => '{{ profile.getImageUrl() }}',
         ];
     }
-
-    // Private Methods
-    // =========================================================================
-
-    /**
-     * Returns the authenticated Guzzle client.
-     *
-     * @param Token $token
-     *
-     * @return Client
-     */
-    private function getClient(Token $token)
-    {
-        $headers = [];
-
-        if ($token) {
-            $headers['Authorization'] = 'Bearer '.$token->token;
-        }
-
-        $options = [
-            'base_uri' => 'https://api.linkedin.com/v1/',
-            'headers' => $headers
-        ];
-
-        return new Client($options);
-    }
 }
 
 
