@@ -78,36 +78,6 @@ class Linkedin extends LoginProvider
         ];
     }
 
-    // Protected Methods
-    // =========================================================================
-
-    /**
-     * @inheritdoc
-     */
-    protected function getRemoteProfile(Token $token)
-    {
-
-        $client = $this->getClient($token);
-
-        $fields = [
-            'id', 'email-address', 'first-name', 'last-name', 'headline', 'location', 'industry', 'picture-url', 'public-profile-url',
-        ];
-
-        $fields = implode(',', $fields);
-
-        $options = [
-            'query' => [
-                'format' => 'json'
-            ]
-        ];
-
-        $uri = 'people/~:(' . $fields . ')';
-
-        $response = $client->request('GET', $uri, $options);
-
-        return json_decode($response->getBody(), true);
-    }
-
     // Private Methods
     // =========================================================================
 
