@@ -5,6 +5,7 @@ Changelog
 
 ### Changed
 - Changed `dukt\social\linkedin\loginproviders\Linkedin::getOauthProvider()` method’s visibility to `public`.
+- Renamed `dukt\social\linkedin\loginproviders\Linkedin::getDefaultScope()` to `dukt\social\linkedin\loginproviders\Linkedin::getDefaultOauthScope()`.
 
 ## 3.0.2 - 2018-05-18
 

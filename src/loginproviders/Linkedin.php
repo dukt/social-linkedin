@@ -36,7 +36,7 @@ class Linkedin extends LoginProvider
     /**
      * @inheritdoc
      */
-    public function getDefaultScope()
+    public function getDefaultOauthScope(): array
     {
         return [
             'r_basicprofile',
