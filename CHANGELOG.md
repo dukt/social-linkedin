@@ -1,6 +1,11 @@
 Changelog
 =========
 
+## Unreleased
+
+### Changed
+- Changed `dukt\social\linkedin\loginproviders\Linkedin::getOauthProvider()` method’s visibility to `public`.
+
 ## 3.0.2 - 2018-05-18
 
 ### Changed
