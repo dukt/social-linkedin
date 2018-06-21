@@ -53,10 +53,7 @@ class Linkedin extends LoginProvider
     }
 
     /**
-     * Returns the login provider’s OAuth provider.
-     *
-     * @return \League\OAuth2\Client\Provider\LinkedIn
-     * @throws \yii\base\InvalidConfigException
+     * @inheritdoc
      */
     public function getOauthProvider(): \League\OAuth2\Client\Provider\LinkedIn
     {
