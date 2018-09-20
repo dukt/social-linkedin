@@ -1,7 +1,7 @@
 Changelog
 =========
 
-## Unreleased
+## 3.0.3 - 2018-09-20
 
 ### Added
 - Added `dukt\social\linkedin\loginproviders\Linkedin::getDefaultUserFieldMapping()`.

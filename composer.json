@@ -1,7 +1,7 @@
 {
   "name": "dukt/social-linkedin",
   "description": "LinkedIn integration for Social",
-  "version": "3.0.2",
+  "version": "3.0.3",
   "type": "craft-plugin",
   "keywords": [
     "linkedin",
