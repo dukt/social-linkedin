@@ -1,7 +1,7 @@
 Changelog
 =========
 
-## Unreleased
+## 3.0.4 - 2019-06-02
 
 ### Changed
 - Updated LinkedIn to use API v2. ([#8](https://github.com/dukt/social-linkedin/issues/8))
