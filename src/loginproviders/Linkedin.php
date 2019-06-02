@@ -38,7 +38,7 @@ class Linkedin extends LoginProvider
     public function getDefaultOauthScope(): array
     {
         return [
-            'r_basicprofile',
+            'r_liteprofile',
             'r_emailaddress'
         ];
     }
